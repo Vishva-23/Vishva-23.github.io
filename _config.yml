@@ -149,7 +149,7 @@ footer:
       url: "https://www.linkedin.com/in/vishva-ks/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url:"https://github.com/Vishva-23"
+      url: "https://github.com/Vishva-23"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
