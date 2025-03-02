@@ -1,17 +1,23 @@
+/* About Section Animation */
+.about-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* About Section Styling */
 .about-section {
     background: #1e1e1e;
     color: #f0f0f0;
     padding: 60px 0;
     text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px); /* This will be overridden if placed later */
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-}
-
-.about-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Title Styling */
