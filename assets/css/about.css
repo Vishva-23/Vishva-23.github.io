@@ -1,0 +1,89 @@
+/* About Section Styling */
+.about-section {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.about-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title Styling */
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff0077;
+}
+
+/* Intro Text */
+.intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+/* Info Boxes */
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #292929;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styling */
+.box h3 {
+    color: #ff0077;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box ul li {
+    font-size: 1em;
+    padding: 5px 0;
+    color: #d1d1d1;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 350px;
+    }
+}
