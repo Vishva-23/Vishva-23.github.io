@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const readMoreBtn = document.getElementById("read-more-btn");
-  const moreContent = document.getElementById("more-content");
+    const aboutSection = document.querySelector(".about-section");
 
-  readMoreBtn.addEventListener("click", function () {
-    moreContent.classList.toggle("hidden");
-    readMoreBtn.innerText = moreContent.classList.contains("hidden")
-      ? "Read More"
-      : "Show Less";
-  });
+    function revealOnScroll() {
+        const sectionTop = aboutSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight * 0.8) { 
+            aboutSection.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Trigger animation if already in view
 });
