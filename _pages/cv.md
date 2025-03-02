@@ -6,6 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 <div class="container">
 
