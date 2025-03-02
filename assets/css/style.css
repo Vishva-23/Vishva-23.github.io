@@ -7,7 +7,8 @@
 
 /* Card Styling - Adds the pop-out effect */
 .card {
-    background: #fff;
+    background: #222; /* Darker background for contrast */
+    color: #f0f0f0; /* Light text color for readability */
     border-radius: 12px; /* Smooth rounded corners */
     padding: 20px;
     margin-bottom: 20px;
@@ -23,10 +24,15 @@
 
 /* Heading inside cards */
 .card h2 {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: #ff0077; /* Updated heading color */
+    border-bottom: 2px solid #ff0077;
     padding-bottom: 10px;
     margin-bottom: 15px;
+}
+
+/* General text styling */
+p, li, span {
+    color: #d1d1d1; /* Light gray for better contrast */
 }
 
 /* Responsive Design - Mobile Optimization */
