@@ -31,18 +31,35 @@ header:
             </div>
 
             <!-- Skills Section -->
-            <div class="box" aria-label="Skills">
+            <div class="box skills-box" aria-label="Skills">
                 <h3>Skills</h3>
-                <ul>
-                    <li>Python, R, SQL</li>
-                    <li>Power BI, Tableau</li>
-                    <li>Deep Learning & Computer Vision</li>
-                    <li>Data Engineering & ETL</li>
-                </ul>
+                <div class="skills-container">
+                    <!-- Skills with Icons -->
+                    <div class="skill">
+                        <img src="{{ '/assets/icons/python.svg' | relative_url }}" alt="Python" title="Python">
+                    </div>
+                    <div class="skill">
+                        <img src="{{ '/assets/icons/R.svg' | relative_url }}" alt="R" title="R">
+                    </div>
+                    <div class="skill">
+                        <img src="{{ '/assets/icons/sql.svg' | relative_url }}" alt="SQL" title="SQL">
+                    </div>
+                    <div class="skill">
+                        <img src="{{ '/assets/icons/Power_BI.svg' | relative_url }}" alt="Power BI" title="Power BI">
+                    </div>
+                    <div class="skill">
+                        <img src="{{ '/assets/icons/tableau.svg' | relative_url }}" alt="Tableau" title="Tableau">
+                    </div>
+
+                    <!-- Skills as Text -->
+                    <div class="skill-text">Deep Learning</div>
+                    <div class="skill-text">Data Engineering</div>
+                </div>
             </div>
             
         </div>
     </div>
 </section>
+
 <!-- JavaScript File -->
 <script src="{{ '/assets/js/about.js' | relative_url }}"></script>
