@@ -1,65 +1,64 @@
 ---
-layout: page
+layout: archive
 title: "CV"
 permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
 ---
 
-# CV  
-### Curriculum Vitae  
+{% include base_path %}
 
-📄 **[Download PDF](assets/files/my_cv.pdf)**  
+Education
+======
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Jekyll, GitHub University, 2014
+* B.S. in GitHub, GitHub University, 2012
 
----
+Work experience
+======
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
 
-## General Information  
-**Full Name**: Vishvasundar  
-**Date of Birth**: 200X (Adjust Accordingly)  
-**Languages**: English, Tamil  
+* Fall 2015: Research Assistant
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
 
----
+* Summer 2015: Research Assistant
+  * GitHub University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+  
+Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
 
-## Academic Interests  
-### Artificial Intelligence  
-- Machine Learning  
-- Deep Learning  
-
-### Data Science  
-- Forecasting  
-- Big Data Analytics  
-
-### Business Intelligence  
-- Power BI  
-- SQL  
-
----
-
-## Education  
-📌 **BE in Computer Science**  
-**St. Joseph's College of Engineering**  
-- Expected Graduation: 2025  
-
-📌 **Higher Secondary Education**  
-**[Your School Name]**  
-- Completed: 2021  
-
----
-
-## Professional Experience  
-📆 **Business Analyst & Machine Learning Intern**  
-**GSMDATA Tech Pvt Ltd**  
-- Developed interactive dashboards using Power BI  
-- Built machine learning models for sales forecasting  
-- Automated reports with Python and Power Automate  
-
-📆 **Data Analyst Intern**  
-**GeoDataTek India Pvt Ltd**  
-- Conducted data cleaning and preprocessing  
-- Created predictive analytics models  
-
----
-
-## Technical Skills  
-📌 Python, SQL, R  
-📌 Power BI, Tableau  
-📌 Machine Learning, Deep Learning  
-📌 Git, Jupyter, Google Colab  
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
