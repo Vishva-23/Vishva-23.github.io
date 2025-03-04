@@ -12,7 +12,7 @@
 
 /* About Section Styling */
 .about-section {
-    background: #1e1e1e;
+    background: none; /* Removed bright gray background */
     color: #f0f0f0;
     padding: 60px 15px;
     text-align: center;
