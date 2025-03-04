@@ -23,11 +23,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 {% endif %}
 
-<!-- About Page Specific Styles & Script -->
 {% if page.url == '/about-me/' or page.url == '/index.html' %}
   <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/skills.css' | relative_url }}"> <!-- Add this line -->
   <script src="{{ '/assets/js/about.js' | relative_url }}" defer></script>
 {% endif %}
+
 
 <!-- FontAwesome Icons -->
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
