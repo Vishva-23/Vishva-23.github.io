@@ -1,30 +1,42 @@
-/* Container Styling */
+/* General Container Styling */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Card Styling - Adds the pop-out effect */
+/* Skills Section - Uses Card Layout */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* Card Styling - Pop-out effect */
 .card {
-    background: #222; /* Darker background for contrast */
-    color: #f0f0f0; /* Light text color for readability */
+    background: #222; /* Dark background */
+    color: #f0f0f0; /* Light text */
     border-radius: 12px; /* Smooth rounded corners */
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15); /* Soft floating effect */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
+    max-width: 350px; /* Limit width for better responsiveness */
+    text-align: center;
 }
 
 /* Hover effect - Enhances the pop-out effect */
 .card:hover {
-    transform: translateY(-5px); /* Moves up slightly */
+    transform: translateY(-5px); /* Slight upward movement */
     box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
-/* Heading inside cards */
+/* Card Headings */
 .card h2 {
-    color: #ff0077; /* Updated heading color */
+    color: #ff0077; /* Custom heading color */
     border-bottom: 2px solid #ff0077;
     padding-bottom: 10px;
     margin-bottom: 15px;
@@ -32,7 +44,7 @@
 
 /* General text styling */
 p, li, span {
-    color: #d1d1d1; /* Light gray for better contrast */
+    color: #d1d1d1; /* Light gray for contrast */
 }
 
 /* Responsive Design - Mobile Optimization */
@@ -41,8 +53,14 @@ p, li, span {
         padding: 10px;
     }
 
+    .skills-container {
+        flex-direction: column; /* Stacks cards on smaller screens */
+        align-items: center;
+    }
+
     .card {
         padding: 15px;
+        max-width: 100%; /* Full width on smaller screens */
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.12);
     }
 
