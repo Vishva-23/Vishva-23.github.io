@@ -47,7 +47,7 @@
 .about-section p {
     font-size: 1.2em;
     line-height: 1.8;
-    max-width: 900px; /* Restrict width for better readability */
+    max-width:  100%; /* Restrict width for better readability */
     margin-top: 10px;
 }
 
