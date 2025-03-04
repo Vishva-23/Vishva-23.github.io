@@ -51,13 +51,14 @@
 }
 
 .box {
-    background: var(--secondary-bg);
+    background: var(--contrast-bg); /* Changed to contrast color */
     padding: 25px;
     border-radius: 12px;
     width: 100%;
     max-width: 350px;
     box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: var(--contrast-text); /* Ensures readability */
 }
 
 .box:hover {
@@ -75,12 +76,13 @@
     padding: 0 20px;
 }
 
+/* Updated Skill Box with Contrast Color */
 .skill {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: var(--secondary-bg);
+    background: var(--contrast-bg); /* Contrast background */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
@@ -88,6 +90,7 @@
     width: 100%;
     max-width: 140px;
     text-align: center;
+    color: var(--contrast-text); /* Ensures text is visible */
 }
 
 .skill:hover {
