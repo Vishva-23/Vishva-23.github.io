@@ -12,51 +12,50 @@
 
 /* About Section Styling */
 .about-section {
-    background: none; /* Removed bright gray background */
+    background: none;
     color: #f0f0f0;
     padding: 60px 15px;
     text-align: center;
 }
 
-/* Title Styling */
+/* Title Styling with Gold Underline */
 .about-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #ff0077;
     font-weight: bold;
     text-transform: uppercase;
+    position: relative;
+    display: inline-block;
 }
 
-/* Intro Text */
-.intro {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.highlight {
-    color: #00aaff;
-    font-weight: bold;
+.about-section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: gold;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 /* Info Boxes */
 .info {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
     margin-top: 20px;
+    justify-items: center;
 }
 
-/* Individual Box Styling */
 .box {
     background: #292929;
     padding: 20px;
     border-radius: 12px;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -66,36 +65,15 @@
     box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Box Headings */
-.box h3 {
-    color: #ff0077;
-    margin-bottom: 12px;
-    font-size: 1.4em;
-}
-
-/* List Styling */
-.box ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.box ul li {
-    font-size: 1em;
-    padding: 6px 0;
-    color: #d1d1d1;
-}
-
-/* Skills Section */
+/* Skills Grid */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
     margin-top: 30px;
+    justify-items: center;
 }
 
-/* Each Skill Item */
 .skill {
     display: flex;
     align-items: center;
@@ -106,7 +84,8 @@
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     text-align: center;
 }
 
@@ -143,63 +122,19 @@
     .about-section h2 {
         font-size: 2.2em;
     }
-
-    .info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box {
-        width: 100%;
-        max-width: 400px;
-    }
 }
 
 @media (max-width: 768px) {
     .about-section {
         padding: 40px 10px;
     }
-
     .about-section h2 {
         font-size: 2em;
-    }
-
-    .intro {
-        font-size: 1.1em;
-    }
-
-    .box {
-        max-width: 350px;
-    }
-
-    .skill {
-        width: 100px;
-    }
-
-    .skill-text {
-        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
     .about-section h2 {
         font-size: 1.8em;
-    }
-
-    .intro {
-        font-size: 1em;
-    }
-
-    .box {
-        max-width: 320px;
-    }
-
-    .skill img {
-        width: 40px;
-    }
-
-    .skill-text {
-        font-size: 10px;
-        padding: 6px 10px;
     }
 }
