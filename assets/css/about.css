@@ -102,11 +102,10 @@ h2:hover .underline {
     box-shadow: 7px 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Skills Grid - Now Two Rows */
+/* Skills Grid - Now Three Rows for Better Layout */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-template-rows: repeat(2, auto); /* Two rows */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
     margin-top: 35px;
     padding: 0;
